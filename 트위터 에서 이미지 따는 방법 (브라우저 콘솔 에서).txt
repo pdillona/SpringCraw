@@ -1,0 +1,46 @@
+트위터 에서 이미지 따는 방법 (브라우저 콘솔 에서) (제이쿼리로 잡는게 쉬운듯?) (for문 배열잡아 돌려야 하고 안될 때는 자식 노드 잡아 보기 권장)
+(트위터는 small이 붙은게 메인 이미지 컨텐츠 인듯) 
+(아래가 small만 거르는 조건 )
+(if (src.includes("small")) {
+        console.log(src);
+    })
+
+
+====================================================================
+
+// 제이쿼리로 태그 잡기
+var ka =$('.css-1dbjc4n').querySelectorAll('img');
+undefined
+
+// 배열에 값 확인
+ka[0].src
+'https://pbs.twimg.com/profile_images/1719902709560852480/73q0WBKu_normal.png'
+
+// 포문 돌려서 small에 해당 하는 값 전부 출력
+for (var i = 0; i < ka.length; i++) {
+    var src = ka[i].src;
+    if (src.includes("small")) {
+        console.log(src);
+    }
+}
+
+
+VM2739:4 https://pbs.twimg.com/media/F95W0akaIAABm81?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95W0anbEAA36Ql?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95W0amaUAAAvxI?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95YOqLaUAAP_Rl?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95YOqGakAA8Nwg?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95R2W0bcAAXKBo?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95R2WAaoAA3vwp?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95R2WzakAAzEbM?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95U59lagAAxebi?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95U59jagAAcyab?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95U59jaQAAH3Pt?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95MAR5agAAs1T2?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95MARybMAAKGu4?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95MAR2aEAAj5HG?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95PFC8bEAAOIGZ?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95PFC2awAAcZcb?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95PFC8aUAAEFq3?format=jpg&name=small
+VM2739:4 https://pbs.twimg.com/media/F95PFC3aIAA_vUj?format=jpg&name=small
+undefined
